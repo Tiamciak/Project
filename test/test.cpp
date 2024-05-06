@@ -1,6 +1,7 @@
 #include "../src/code.hpp"
 
 #include <iostream>
+
 int main() {
 
   if (dodawanie(0, 0) != 0){
