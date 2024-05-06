@@ -1,0 +1,11 @@
+WYMAGANIA
+•	(+) należy stworzyć własną aplikacje, możliwie prostą, która coś robi. Następnie należy tak przygotowaną aplikację dodać do repozytorium Git i wysłać na własnego Github'a. Następnie należy wprowadzić jakąś modyfikacje do kodu i utworzyć nowego commit'a, tak by były łącznie co najmniej 2 (pierwszy - inicjalizacyjny i drugi ze zmianą).
+Następnie należy do aplikacjina utworzyć testy (testy jednostkowe - podobnie, jak zademonstrowano na wykładzie). Ważne, by testy faktycznie sprawdzały jakąś część aplikacji. W praktyce oznacza to, że aplikacja musi zawierać pewną funkcję (poza główną funkcją main), która będzie możliwa do przetestowania. Należy zatem tak wybrać aplikację i zaprojektować ją w taki sposób, by spełnić wymienione wymagania.
+•	(++) należy spełnić wymagania na (+), a następnie utworzyć kolejną zmianę kodu i dodać nowego commit'a, ale tym razem w nowej gałęzi i utworzyć nowego pull request'a (podobnie, jak zaprezentowano na wykładzie), a następnie go zatwirdzić, łącząc z główną gałęzią.
+Następnie dodać workflow dla systemu Github Actions, który automatycznie uruchomi testy i budowę dla każdego nowo utworzonego pull request'a. By zademonstrować działanie systemu Github Actions należy dodać nowego pull request'a, a po udanym uruchomieniu systemu CI, go zatwierdzić.
+•	(+++) należy spełnić poprzednie wymagania, a następnie dodać kolejny workflow dla systemu Github Actions, który w wypadku otagowania commit'a tagiem zgodnym z wersjonowaniem semantycznym automatycznie uruchomi testy, zbuduje oprogramowania i je wyda (Github Releases). By zademonstrować automatyczne wydawanie oprogramowania należy otagować commit'a i wysłać tag na Github'a.
+By zaprezentować wyniki wystarczy wstawić URL do projektu na Github'ie do zadania na Teams'ach (uwaga: repozytorium musi być publiczne).
+
+WAŻNE
+•	Oprócz adresu URL proszę także wysłać informacje co zostało zrealizowane, tj. wymagania na którą z ocen są spełnione.
+•	W przypadku używania innego sposobu budowy niż Makefile przedstawiony na wykładzie, proszę dodać do repozytorium plik README.md lub README.txt w którym będzie zawarta informacja o tym, jak aplikację zbudować i przetestować.
