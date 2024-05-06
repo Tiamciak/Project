@@ -16,6 +16,6 @@ double dzielenie(double num1, double num2) {
     if (num2 != 0) {
         return num1 / num2;
     } else {
-        throw "Błąd! Dzielenie przez 0 nie jest możliwe.";
+        throw "Error! Dividing by 0 is not possible!";
     }
 }
