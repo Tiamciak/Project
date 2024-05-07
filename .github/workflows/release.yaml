@@ -16,10 +16,23 @@ jobs:
     - name: "Checkout"
       uses: actions/checkout@v2
 
-    # TODO: setup compiler
+    - name: "Setup gcc"
+      shell: bash
+      run: |
+        sudo apt update
+        sudo apt install gcc-10 g++-10
 
-    # TODO: run tests
+    - name: "Test project"
+      run: make test
 
-    # TODO: build project
+    - name: "Build project"
+      run: make build
 
-    # TODO: release
+    - name: "Release"
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        files: |
+          LICENSE
+          dist/app*
